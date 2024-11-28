@@ -1,19 +1,41 @@
 // <-- ========== Menu Section functionality Start========== -->
 
-// JavaScript to handle Main Menu toggle
-document.addEventListener('DOMContentLoaded', function () {
-  const menuButton = document.getElementById('menu-toggle');
-  const mainMenu = document.getElementById('main-menu');
+// JavaScript to handle-button Main Menu toggle
+const menuToggleButton = document.getElementById('menu-toggle');
+const mainMenu = document.getElementById('main-menu');
 
-  menuButton.addEventListener('click', function () {
-    mainMenu.classList.toggle('active'); // Toggle the menu visibility
+// Toggle the 'show' class when the menu button is clicked
+menuToggleButton.addEventListener('click', function () {
+  mainMenu.classList.toggle('show');
+});
+
+
+// Main-Menu active link functionality 
+document.addEventListener("DOMContentLoaded", () => {
+  const navItems = document.querySelectorAll('.nav-item'); // Select all nav items
+
+  // Ensure the first nav item is active on page load
+  if (navItems.length > 0) {
+    navItems[0].classList.add('active'); // Add 'active' to the first nav item by default
+  }
+
+  // Add event listeners to each nav item
+  navItems.forEach((item) => {
+    item.addEventListener('click', function () {
+      // Remove 'active' class from all nav items
+      navItems.forEach(navItem => navItem.classList.remove('active'));
+
+      // Add 'active' class to the clicked nav item
+      this.classList.add('active');
+    });
   });
 });
+
 // <-- ========== Menu Section functionality End========== -->
 
 
-
 // <-- ========== Slider Section functionality Start ========== -->
+
 document.addEventListener("DOMContentLoaded", () => {
   const logoContainer = document.querySelector('#logoContainer');
 
@@ -35,27 +57,41 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-
 // <-- ========== Slider Section functionality End ========== -->
 
 
 
 // <-- ========== Chat Section functionality Start ========== -->
-let currentIndex = 1; // To keep track of the current image/review
-const totalItems = 3; // Total number of images and reviews
+let currentIndex = 1;
+const totalItems = 3;
 
-document.getElementById("nextButton").addEventListener("click", function () {
-  // Hide the current image and review
-  document.getElementById(`chatImage${currentIndex}`).style.display = "none";
-  document.getElementById(`chatReview${currentIndex}`).style.display = "none";
+document.getElementById("nextButton").addEventListener("click", () => {
+  const currentImage = document.getElementById(`chatImage${currentIndex}`);
+  const currentReview = document.getElementById(`chatReview${currentIndex}`);
+  currentImage.classList.add("fade-out-left");
+  currentReview.classList.add("fade-out-left");
 
-  // Increment the index (loop back to 1 if it exceeds totalItems)
-  currentIndex = (currentIndex % totalItems) + 1;
+  setTimeout(() => {
+    currentImage.style.display = "none";
+    currentReview.style.display = "none";
+    currentImage.classList.remove("fade-out-left");
+    currentReview.classList.remove("fade-out-left");
 
-  // Show the next image and review
-  document.getElementById(`chatImage${currentIndex}`).style.display = "block";
-  document.getElementById(`chatReview${currentIndex}`).style.display = "block";
+    currentIndex = (currentIndex % totalItems) + 1;
+
+    const nextImage = document.getElementById(`chatImage${currentIndex}`);
+    const nextReview = document.getElementById(`chatReview${currentIndex}`);
+    nextImage.style.display = "block";
+    nextReview.style.display = "block";
+
+    nextImage.classList.add("fade-in");
+    nextReview.classList.add("fade-in");
+
+    setTimeout(() => {
+      nextImage.classList.remove("fade-in");
+      nextReview.classList.remove("fade-in");
+    }, 500);
+  }, 500);
 });
 // <-- ========== Chat Section functionality End ========== -->
 
@@ -79,6 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
 // <-- ========== Footer Section functionality End ========== -->
 
 

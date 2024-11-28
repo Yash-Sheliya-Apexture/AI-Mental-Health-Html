@@ -5,7 +5,7 @@
     <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI-Mental-Health OG</title>
+    <title>AI-Mental-Health</title>
 
     <!-- Link to custom CSS styles -->
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
@@ -44,77 +44,122 @@
 
             <!-- main-menu -->
             <div class="main-menu" id="main-menu">
-                <div class="nav-bar d-flex justify-content-center">
-                    <nav>
-                        <ul class="nav d-flex ">
-                            <li class="nav-item">
-                                <a class="nav-links active" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-links " href="#">Platform</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-links " href="#">Assessment</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-links " href="#">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-links " href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-links " href="#">Contact Us</a>
-                            </li>
-                        </ul>
-                    </nav>
 
-                    <div class="nav-content d-none d-md-block">
-                        <div class="condition d-flex gap-5">
-                            <p class="small-title text-white text-uppercase">terms & condition</p>
-                            <p class="small-title text-white text-uppercase">privacy policy </p>
+                <div class="row justify-content-center">
+                    <!-- Left Navigation Section -->
+                    <div class="col-md-4 col-lg-3 bg-dark-brown text-white py-5">
+                        <nav>
+                            <ul class="nav flex-column gap-4">
+                                <li class="nav-item">
+                                    <a class="nav-link active d-flex align-items-center fa-2x fw-bold text-white rounded-5"
+                                        href="#">
+                                        <span class="dot me-2"></span> Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fa-2x fw-bold text-white rounded-5" href="#">Platform</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fa-2x fw-bold text-white rounded-5" href="#">Assessment</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fa-2x fw-bold text-white rounded-5" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fa-2x fw-bold text-white rounded-5" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fa-2x fw-bold text-white rounded-5" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Right Content Section -->
+                    <div class="col-md-8 col-lg-9 bg-light-brown py-5">
+                        <!-- Terms and Policy -->
+                        <div class="d-flex justify-content-start small text-uppercase text-white gap-4 mb-4">
+                            <span class="small-title text-white text-uppercase">Terms & Conditions</span>
+                            <span class="small-title text-white text-uppercase">Privacy Policy</span>
                         </div>
 
-                        <div class="heading align-items-center mt-5">
-                            <h4>Harnessing the power of AI technology to revolutionize mental health.</h4>
+                        <!-- Heading -->
+                        <div class="mb-5">
+                            <h4 class="text-white">
+                                Harnessing the power of AI technology to revolutionize mental health.
+                            </h4>
                         </div>
 
-                        <div class="contact-info mt-5">
-                            <div class="freud-address">
-                                <img src="./assets/images/51-location-1.svg" alt="Location icon"
-                                    class="d-flex contact-icons rounded-5">
-                                <p>456 Oak Avenue,<br> Springfield, IL 62704</p>
+                        <!-- Contact Information -->
+                        <div class="contact-info">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="d-flex flex-column gap-2">
+                                        <img src="./assets/images/51-location-1.svg" alt="Location Icon"
+                                            class=" icon me-3">
+                                        <p class="text-white mb-0">
+                                            456 Oak Avenue,<br> Springfield, IL 62704
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex flex-column gap-2">
+                                        <img src="./assets/images/54-telephone-white.svg" alt="Phone Icon"
+                                            class="icon me-3">
+                                        <p class="text-white mb-0">
+                                            +555 123-4567<br> +123 456-789-000
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex flex-column gap-2">
+                                        <img src="./assets/images/46-email-1-white.svg" alt="Email Icon"
+                                            class="icon me-3">
+                                        <p class="text-white mb-0">
+                                            inquiries@freud.ai<br> work@freud.ai
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="freud-number">
-                                <img src="./assets/images/54-telephone-white.svg" alt="Phone icon"
-                                    class="d-flex contact-icons rounded-5">
-                                <p>+555 123-4567</p>
-                                <p>+123 456-789-000</p>
+                        </div>
 
+                        <!-- Store Buttons -->
+                        <div class="hero-buttons d-flex align-items-center mt-4 gap-2">
+                            <div
+                                class="button btn-apple d-flex justify-content-between align-items-center rounded-5 ps-3 p-2">
+                                <a href="#" class="text-white text-decoration-none btn-lg d-flex align-items-center">
+                                    Apple Store
+                                </a>
+                                <div class="card-icon icon-green rounded-circle d-flex">
+                                    <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 12L21 12" stroke="#fe814b" stroke-width="2"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M16.5529 17.7956C17.8287 17.4537 18.9561 16.7004 19.7601 15.6526C20.5642 14.6047 21 13.3208 21 12C21 10.6792 20.5642 9.3953 19.7601 8.34743C18.9561 7.29957 17.8287 6.54629 16.5529 6.20445"
+                                            stroke="#fe814b" stroke-width="2" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
                             </div>
-                            <div class="freud-mail">
-                                <img src="./assets/images/46-email-1-white.svg" alt="Email icon"
-                                    class="d-flex contact-icons rounded-5">
-                                <p>inquiries@freud.ai <br> work@freud.ai</p>
+
+                            <div
+                                class="button btn-google d-flex justify-content-between align-items-center rounded-5 ps-3 p-2">
+                                <a href="#" class="text-white text-decoration-none btn-lg d-flex align-items-center">
+                                    Google Play
+                                </a>
+                                <div class="card-icon icon-yellow rounded-circle d-flex">
+                                    <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 12L21 12" stroke="#9bb068" stroke-width="2"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M16.5529 17.7956C17.8287 17.4537 18.9561 16.7004 19.7601 15.6526C20.5642 14.6047 21 13.3208 21 12C21 10.6792 20.5642 9.3953 19.7601 8.34743C18.9561 7.29957 17.8287 6.54629 16.5529 6.20445"
+                                            stroke="#9bb068" stroke-width="2" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="store-buttons d-flex justify-content-center align-items-center flex-column flex-md-row">
-                    <a href="#"
-                        class="store-btn button apple-store d-flex align-items-center justify-content-between text-decoration-none">
-                        <span>Apple Store</span>
-                        <span class="circle-arrow rounded-5 icon-oragan d-flex justify-content-center align-items-center">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                        </span>
-                    </a>
-                    <a href="#"
-                        class="store-btn button google-store d-flex align-items-center justify-content-between text-decoration-none">
-                        <span>Google Store</span>
-                        <span class="circle-arrow rounded-5 icon-green d-flex justify-content-center align-items-center">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                        </span>
-                    </a>
                 </div>
             </div>
         </div>
@@ -298,7 +343,7 @@
                     </a>
 
                     <a href="#" class="link-item text-decoration-none d-flex align-items-center">
-                        <div class="button link-right  d-flex align-items-center">
+                        <div class="button link-right  d-flex align-items-center rounded-5 ps-3">
                             <span class="link-text">See All Statistics</span>
                             <svg class="link-arrow rounded-5" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -574,7 +619,7 @@
                     <div class="benefit-image position-relative">
                         <img src="./assets/images/benefit-1.png" alt="AI Chatbot Illustration" class="img-fluid">
                         <img src="./assets/images/benefit-mobile-1.png" alt="" class="img-fluid position-absolute">
-                       
+
                     </div>
                 </div>
 
@@ -991,7 +1036,7 @@
                 <div class="col-12 col-md-8 app-heading">
                     <h2>Get Your Mind <span class="text-highlight">Healthier.</span></h2>
                 </div>
-    
+
                 <div class="col-12 col-md-4 d-flex store-buttons gap-2 justify-content-center align-items-center">
                     <div class="button d-flex justify-content-between align-items-center p-2 ps-3 rounded-5">
                         <a href="#" class="text-white text-decoration-none d-flex align-items-center">Apple
@@ -1006,7 +1051,7 @@
                             </svg>
                         </div>
                     </div>
-    
+
                     <div class="button d-flex justify-content-between align-items-center p-2 ps-3 rounded-5">
                         <a href="#" class="text-white text-decoration-none d-flex align-items-center">Google
                             Play</a>

@@ -271,8 +271,10 @@ p {
 /* ========== Header CSS Start ==========*/
 .header-section {
   position: relative;
+  /* Default position */
   z-index: 1000;
   padding-top: 16px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .header-section .full-header {
@@ -280,6 +282,7 @@ p {
   top: 0;
   left: 0;
   z-index: 1001;
+  /* Ensures header stays on top */
 }
 
 .header-section .full-header .navbar {
@@ -309,112 +312,85 @@ p {
   gap: 8px;
 }
 
+/* ========== Header CSS End ==========*/
+
 /* ========== Main Menu CSS Start ==========*/
-.header-section .main-menu {
+.main-menu {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  /* height: 100vh; */
+  height: 100%;
   background: var(--light-brawn);
   z-index: 999;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  padding: 140px;
-  color: var(--white);
- 
+  overflow-y: auto;
+  padding-top: 80px;
+  transition: transform 0.3s ease-in-out;
 }
 
-.header-section .main-menu.active {
+.main-menu.show {
   display: block;
-  opacity: 1;
-  visibility: visible;
 }
 
-.header-section .main-menu .nav-bar {
-  gap: 424px;
+.main-menu {
+  transition: transform 0.3s ease-in-out;
 }
 
-.header-section .main-menu .nav-bar .nav {
-  gap: 32px;
-  flex-direction: column;
+.bg-light-brown {
+  max-width: 500px;
 }
 
-.header-section .main-menu .nav-bar .nav .nav-item {
-  border-radius: 100px;
+.text-white {
+  color: #FFFFFF;
+}
+
+.main-menu .nav {
+  padding: 0;
   list-style: none;
 }
 
-.header-section .main-menu .nav-bar .nav .nav-item:hover {
+.main-menu .nav .nav-item .nav-link {
+  transition: opacity 0.3s ease;
+  max-width: fit-content;
+}
+
+.main-menu .nav .nav-item .nav-link:hover {
   background: var(--mindful-brawn);
   transition: background 0.5s ease-in;
 }
 
-.header-section .main-menu .nav-bar .nav .nav-item .nav-links {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 56px;
-  color: var(--white);
-  text-decoration: none;
+.main-menu .nav .nav-item .nav-link .dot {
+  width: 8px;
+  height: 8px;
+  background-color: #FFD700;
+  border-radius: 50%;
 }
 
-
-.header-section .main-menu .nav-bar .nav-content .contact-info {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 17px;
+.main-menu .contact-info .icon {
+  width: 24px;
+  height: 24px;
 }
 
-.header-section .main-menu .nav-bar .nav-content .contact-info .contact-icons {
-  padding: 8px;
-  background: var(--mindful-brawn);
+.main-menu .hero-buttons .button {
+  width: 200px;
+  max-width: 100%;
 }
 
-.header-section .main-menu .store-buttons {
-  padding: 8px;
-  background: var(--white);
-  border-radius: 100px;
-  max-width: 500px;
-  gap: 12px;
-  position: absolute;
-  bottom: 2%;
-  right: 1%;
+.main-menu .hero-buttons .btn-apple {
+  background-color: var(--empathy-orange);
 }
 
-.header-section .main-menu .store-buttons .store-btn {
-  padding: 16px;
-  border-radius: 100px;
-  color: white;
-  width: 100%;
-  gap: 32px;
-}
-
-.header-section .main-menu .store-buttons .store-btn .circle-arrow {
-  background-color: white;
-  padding: 16px;
-}
-
-.header-section .main-menu .store-buttons .store-btn .icon-oragan {
-  color: var(--empathy-orange);
-}
-
-.header-section .main-menu .store-buttons .store-btn .icon-green,
-.hero-section .text-content .hero-btn .btn-app {
-  color: var(--serenity-green);
-}
-
-.header-section .main-menu .store-buttons .apple-store {
-  background: var(--empathy-orange);
-}
-
-.header-section .main-menu .store-buttons .google-store {
+.main-menu .hero-buttons .btn-google {
   background-color: var(--serenity-green);
 }
 
+.main-menu .hero-buttons .btn-apple .card-icon,
+.main-menu .hero-buttons .btn-google .card-icon {
+  background-color: var(--white);
+}
+
 /* ========== Main Menu CSS End ==========*/
-/* ========== Header CSS End ==========*/
 
 /* ========== Hero Section CSS Start ==========*/
 
@@ -906,8 +882,28 @@ p {
 }
 
 
+/* Base styles */
+.chat-image, .chat-review-text {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
 
+/* Animations */
+.fade-out-left {
+  opacity: 0;
+  transform: translateX(-50%);
+}
 
+.fade-out-right {
+  opacity: 0;
+  transform: translateX(50%);
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 /* ========== Chat CSS End ========== */
 
