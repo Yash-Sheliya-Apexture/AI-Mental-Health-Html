@@ -1,0 +1,459 @@
+/* ========== Responsive Breakpoints ========== */
+
+@media (max-width: 1199.98px) {
+
+  /* Reusable Breakpoints css */
+  .container {
+    max-width: 960px;
+  }
+
+  /* Reusable Breakpoints css */
+
+  /* ========== Header CSS Start ========== */
+  .header-section .main-menu .nav-bar {
+    gap: 150px;
+  }
+
+  /* ========== Header CSS End ========== */
+
+  /* ========== Hero CSS Start ========== */
+  
+
+  /* ========== Hero CSS End ========== */
+
+  /* ========== Purpose CSS Start========== */
+
+  .purpose-section {
+    padding: 80px 0;
+  }
+
+  .purpose-cards-grid .purpose-card-wrapper {
+    flex: 0 0 50%;
+    /* Make each card take 50% width */
+    max-width: 50%;
+  }
+
+  /* ========== Purpose CSS End========== */
+
+  /* ========== Feature CSS Start========== */
+  /* ========== Feature CSS End========== */
+
+
+  /* ========== Benefit CSS Start========== */
+
+
+  /* ========== Benefit CSS End========== */
+
+  /* ========== FAQ CSS Start ========== */
+  .chat-section .row {
+    gap: 120px;
+  }
+
+  .chat-section .col-md-6 {
+    width: calc(50% - 60px);
+  }
+
+  .chat-section .content-box {
+    gap: 40px;
+  }
+
+  /* ========== FAQ CSS End ========== */
+
+
+  .footer-section .app-info .store-buttons {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* .footer-section .app-info .store-buttons .button {
+    width: 400px;
+  } */
+
+}
+
+@media (max-width: 991.98px) {
+
+  /* Reusable Breakpoints css */
+  .container {
+    max-width: 720px;
+  }
+
+  .purpose-cards-grid .purpose-card-wrapper {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* ========== Header CSS Start ========== */
+  .header-section .main-menu .nav-bar .nav-content .contact-info {
+    grid-template-columns: max-content;
+  }
+
+  /* ========== Header CSS End ========== */
+
+  /* ========== Hero CSS Start ========== */
+  .hero-section .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-section .hero-content .text-content {
+    text-align: center;
+  }
+
+  .hero-section .hero-buttons {
+    flex-direction: column;
+  }
+
+  /* ========== Hero CSS End ========== */
+
+  /* ========== Purpose CSS Start========== */
+  .purpose-section .purpose-detalis .links-section {
+    gap: 16px;
+  }
+
+  /* ========== Purpose CSS End========== */
+
+  /* ========== Feature CSS Start========== */
+  /* ========== Feature CSS End========== */
+
+  /* ========== Benefit CSS Start ========== */
+
+  .benefit-section .benefit-content-wrapper {
+    flex-direction: column;
+  }
+
+  .benefit-section .benefit-content-wrapper .benefit-image {
+    order: -1;
+    margin-bottom: 20px;
+
+  }
+
+  .benefit-section .benefit-content-wrapper .benefit-details {
+    order: 1;
+  }
+
+  /* ========== Benefit CSS End ========== */
+
+  /* ========== FAQ CSS Start ========== */
+
+  .chat-section .row {
+    gap: 48px;
+  }
+
+  .chat-section .col-md-6 {
+    width: calc(50% - 24px);
+  }
+
+  .chat-section .content-box h3 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .chat-review h3 span {
+    display: none;
+  }
+
+  .chat-section .content-box {
+    gap: 32px;
+  }
+
+  /* ========== FAQ CSS End ========== */
+
+
+
+
+}
+
+@media (max-width: 767.98px) {
+
+  .journey-section .journey-content .journey-heading {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .journey-section .journey-content .journey-description {
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  /* Reusable Breakpoints css */
+  .container {
+    max-width: 100%;
+  }
+
+  /* Reusable Breakpoints css */
+
+  /* ========== Header CSS Start ========== */
+  .header-section .full-header .navbar .navbar-left {
+    display: none;
+  }
+
+  /* ========== Header CSS End ========== */
+
+  .hero-section .hero-content {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hero-section .hero-content .hero-head{
+    text-align: center;
+  }
+
+  .hero-section .hero-content .hero-head .hero-button{
+    justify-content: center;
+  }
+
+  .hero-image .img-fluid:first-of-type {
+    transform: rotate(90deg); /* Adjust the angle as needed */
+}
+
+
+  
+.hero-section .hero-content .hero-head .hero-button
+
+  /* ========== Purpose CSS Start ========== */
+
+  .purpose-section .purpose-detalis .purpose-head .purpose-heading span {
+    color: var(--light-brawn);
+  }
+
+  .purpose-section .purpose-detalis .purpose-head .purpose-heading {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .purpose-section .purpose-detalis .purpose-cards-grid .purpose-card h1 {
+    font-size: 68px;
+    line-height: 60px;
+  }
+
+  /* ========== Purpose CSS End ========== */
+
+  /* ========== Feature CSS Start ========== */
+
+  .feature-section .feature-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  /* ========== Feature CSS End ========== */
+
+
+  /* ========== Journey CSS Start ========== */
+
+
+  .journey-buttons {
+    flex-direction: column;
+  }
+
+  .journey-section .journey-buttons .button {
+    width: 300px;
+  }
+
+  /* ========== Journey CSS End ========== */
+
+  /* ========== Blog CSS Start ========== */
+  .blog-section .blog-all-posts .blog-head .blog-heading .blog-text {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  /* ========== Blog CSS End ========== */
+
+  /* ========== Footer CSS Start ========== */
+
+  .footer-section .footer-contain {
+    gap: 64px;
+  }
+
+  .footer-section .social-icons {
+    justify-content: center;
+  }
+
+  .app-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section .app-info .app-heading h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  /* ========== Footer CSS Start ========== */
+}
+
+@media (max-width: 576.98px) {
+  /* ========== Header CSS Start ========== */
+
+  .header-section .full-header .navbar .navbar-logo {
+    display: none;
+  }
+
+  .header-section .full-header .navbar .logomark {
+    display: block;
+  }
+
+  /* ========== Header CSS End ========== */
+
+  /* ========== Hero CSS Start ========== */
+  .hero-section .hero-buttons {
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-section .text-content .hero-buttons .btn-outline-demo span {
+    text-align: center;
+  }
+
+  /* ========== Hero CSS End ========== */
+
+  /* ========== Slider Start ========== */
+  .logos:before,
+  .logos:after {
+    width: 100px;
+    height: 100%;
+  }
+
+  .logos-slide img {
+    width: 100px;
+    height: unset;
+    margin: 0 19px;
+  }
+
+  /* ========== Slider End ========== */
+
+  /* ========== Purpose CSS Start========== */
+  .purpose-section {
+    padding: 41px 0;
+  }
+
+  .purpose-section .purpose-detalis .purpose-head .purpose-heading h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .purpose-section .purpose-detalis .purpose-cards-grid .purpose-card p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .purpose-section .purpose-detalis .purpose-cards-grid .purpose-card h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .purpose-section .purpose-detalis .purpose-cards-grid .purpose-card {
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+  }
+
+  .purpose-section .purpose-detalis .purpose-cards-grid .purpose-card .card-heading {
+    text-align: left;
+    margin-right: auto;
+  }
+
+  .purpose-section .purpose-detalis .purpose-cards-grid .purpose-card .card-icon {
+    margin-left: auto;
+    text-align: right;
+
+  }
+
+
+  .purpose-section .purpose-detalis .purpose-cards-grid .purpose-card .card-heading h1 {
+    margin-bottom: 8px;
+
+  }
+
+  .purpose-section .purpose-detalis .links-section {
+    flex-direction: column;
+  }
+
+  /* ========== Purpose CSS End========== */
+
+  /* ========== Feature CSS Start ========== */
+
+  .feature-section {
+    padding: 86px 0;
+  }
+  .feature-section .feature-detalis .feature-head .feature-heading h2{
+    font-size: 36px;
+    line-height: 44px;
+  }
+  /* ========== Feature CSS End ========== */
+
+  /* ========== Benefit CSS Start ========== */
+
+  .benefit-section .benefit-content-wrapper .benefit-details .benefit-heading h3 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .benefit-section .benefit-content-wrapper .benefit-details .benefit-description p {
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+
+
+
+  /* ========== Benefit CSS End ========== */
+
+  /* ========== Journey CSS Start ========== */
+  /* ========== Journey CSS End ========== */
+
+  /* ========== Blog CSS Start ========== */
+
+
+  /* ========== Blog CSS End ========== */
+
+  /* ========== Chat CSS Start ========== */
+  .chat-section .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .chat-section .col-12 {
+    width: 100%;
+  }
+
+  .chat-section .col-md-6:nth-child(2) {
+    order: -1;
+  }
+
+  .chat-section button {
+    justify-content: center;
+  }
+
+  /* ========== Chat CSS End ========== */
+
+  /* ========== Footer CSS Start ========== */
+  .footer-section {
+    padding-top: 74px;
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
+  .store-buttons {
+    margin-top: 1rem;
+    /* Add desired top margin */
+  }
+
+  .footer-section .copyright {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* ========== Footer CSS End ========== */
+
+
+}
+
+@media (max-width: 375px) {
+
+}
