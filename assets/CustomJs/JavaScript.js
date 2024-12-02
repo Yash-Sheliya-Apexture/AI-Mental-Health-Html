@@ -1,35 +1,25 @@
 // <-- ========== Menu Section functionality Start========== -->
 
 // JavaScript to handle-button Main Menu toggle
-const menuToggleButton = document.getElementById('menu-toggle');
-const mainMenu = document.getElementById('main-menu');
+document.getElementById("menu-toggle").addEventListener("click", function() {
+    const menu = document.getElementById("main-menu");
+    const body = document.body;
 
-// Toggle the 'show' class when the menu button is clicked
-menuToggleButton.addEventListener('click', function () {
-  mainMenu.classList.toggle('show');
+    // Toggle the menu visibility
+    menu.classList.toggle("show");
+
+    // Disable or enable page scroll
+    if (menu.classList.contains("show")) {
+        body.classList.add("no-scroll"); // Disable scroll
+    } else {
+        body.classList.remove("no-scroll"); // Enable scroll
+    }
 });
+
 
 
 // Main-Menu active link functionality 
-document.addEventListener("DOMContentLoaded", () => {
-  const navItems = document.querySelectorAll('.nav-item'); // Select all nav items
 
-  // Ensure the first nav item is active on page load
-  if (navItems.length > 0) {
-    navItems[0].classList.add('active'); // Add 'active' to the first nav item by default
-  }
-
-  // Add event listeners to each nav item
-  navItems.forEach((item) => {
-    item.addEventListener('click', function () {
-      // Remove 'active' class from all nav items
-      navItems.forEach(navItem => navItem.classList.remove('active'));
-
-      // Add 'active' class to the clicked nav item
-      this.classList.add('active');
-    });
-  });
-});
 
 // <-- ========== Menu Section functionality End========== -->
 

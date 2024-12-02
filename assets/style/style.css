@@ -243,16 +243,12 @@ p {
   font-size: 18px;
   font-weight: 700;
   line-height: 21.6px;
-  transition: all 0.6s ease-in-out;
 }
 
 .button:hover {
   background-color: #f0f0f0;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
-  transform: scale(1.05);
   cursor: pointer;
 }
-
 
 .dot {
   width: 8px;
@@ -270,11 +266,12 @@ p {
 
 /* ========== Header CSS Start ==========*/
 .header-section {
-  position: relative;
+  position: fixed;
   /* Default position */
   z-index: 1000;
-  padding-top: 16px;
   transition: transform 0.3s ease-in-out;
+  width: 100%;
+  top: 10px;
 }
 
 .header-section .full-header {
@@ -313,6 +310,10 @@ p {
 }
 
 /* ========== Header CSS End ==========*/
+.no-scroll {
+  overflow: hidden !important;
+  /* Prevents page scrolling */
+}
 
 /* ========== Main Menu CSS Start ==========*/
 .main-menu {
@@ -321,28 +322,35 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: var(--light-brawn);
   z-index: 999;
   overflow-y: auto;
-  padding-top: 80px;
   transition: transform 0.3s ease-in-out;
+/* 
+  background-image: url(../images/main-menu-BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+
+.all-menu-wrap {
+  overflow-y: auto;
+  height: 100%;
+  padding-top: 116px;
+}
+
+.main-menu .all-menu-wrap .menu-wrapper{
+  gap: 200px;
 }
 
 .main-menu.show {
   display: block;
 }
 
-.main-menu {
-  transition: transform 0.3s ease-in-out;
-}
-
 .bg-light-brown {
   max-width: 500px;
-}
-
-.text-white {
-  color: #FFFFFF;
 }
 
 .main-menu .nav {
@@ -350,30 +358,57 @@ p {
   list-style: none;
 }
 
+.nav-item .active {
+  background: var(--mindful-brawn);
+  /* Highlight active item */
+}
+
 .main-menu .nav .nav-item .nav-link {
   transition: opacity 0.3s ease;
   max-width: fit-content;
 }
+
 
 .main-menu .nav .nav-item .nav-link:hover {
   background: var(--mindful-brawn);
   transition: background 0.5s ease-in;
 }
 
-.main-menu .nav .nav-item .nav-link .dot {
+.main-menu .nav .nav-item .nav-link.active {
+  background-color: var(--mindful-brawn);
+}
+
+
+.main-menu .nav .nav-item .nav-link.active .dot {
+  background-color: var(--serenity-green);
   width: 8px;
   height: 8px;
-  background-color: #FFD700;
-  border-radius: 50%;
+}
+
+.main-menu .nav .nav-item .nav-link:hover .dot {
+  background-color: var(--serenity-green);
+  /* Dot color on hover */
+  transition: background-color 0.3s ease;
 }
 
 .main-menu .contact-info .icon {
   width: 24px;
   height: 24px;
+  padding: 8px;
+  background-color: var(--mindful-brawn);
+  box-sizing: content-box;
+}
+
+.main-menu .hero-buttons {
+  border-radius: 48px;
+  width: 450px;
+  position: fixed;
+  right: 32px;
+  bottom: 13px;
 }
 
 .main-menu .hero-buttons .button {
-  width: 200px;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -392,43 +427,80 @@ p {
 
 /* ========== Main Menu CSS End ==========*/
 
-/* ========== Hero Section CSS Start ==========*/
+/* General Styles */
+.hero-section {
+  position: relative;
+}
 
-.hero-section .hero-content .hero-head{
+.hero-section .hero-wrapper{
+  position: relative;
+  z-index: 3;
+  padding: 110px 0;
+  height: 100vh;
+}
+
+.hero-section .hero-wrapper .hero-head {
   max-width: 500px;
 }
 
-.hero-section .hero-content .hero-head .hero-heading h1{
+
+.hero-section .hero-head .hero-heading h1 {
   color: var(--mindful-brawn);
 }
 
-.hero-section .hero-content .hero-head .hero-heading span{
+.hero-section .hero-head .hero-heading span {
   color: var(--empathy-orange);
 }
 
-/* Hero Button */
-.hero-section .hero-content .hero-head .hero-button .demo-button a{
+.hero-section .hero-head .hero-button .demo-button {
+  padding: 21px 32px;
+  border: 1px solid #4b3425;
+}
+
+.hero-section .hero-head .hero-button .button {
+  max-width: 100%;
+}
+
+.hero-section .hero-head .hero-button .demo-button a {
   color: var(--mindful-brawn);
-  border: 1px solid #926247;
-  padding: 20px;
 }
 
-.hero-section .hero-content .hero-head .hero-button .app-button{
-  background: var(--serenity-green);
-  
+.hero-section .hero-head .hero-button .app-button {
+  background-color: var(--serenity-green);
 }
 
-.hero-section .hero-content .hero-image img:first-child{
+/* Hero Images */
+.hero-section .hero-image {
+  position: relative;
   z-index: 1;
+  position: absolute !important;
+  bottom: -53%;
+  right: -47%;
+  width: 100%;
 }
 
-.hero-section .hero-content .hero-image img:last-child {
-  top: -14%;
-  left: -28%;
+.hero-section .hero-image img{
+  width: 100%;
+}
+
+.hero-section .mobile-img img {
+  top: 7%;
+  left: 42%;
+  max-width: 100%;
   z-index: 2;
+  width: 100%;
 }
 
-
+.gradiant {
+  position: absolute; /* Ensure it's positioned relative to the parent container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Adjust height to fit the desired overlay area */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 88%, rgba(255, 255, 255, 0.9) 94%);
+  pointer-events: none; /* Make sure it doesn't block interactions with other elements */
+  z-index: 2; /* Adjust as needed to place the gradient in the right stacking order */
+}
 /* ========== Hero Section CSS End ==========*/
 
 /* ========== Slider Section CSS Start ==========*/
@@ -447,16 +519,16 @@ p {
   background: var(--mindful-brawn);
 }
 
-.slider-section .container{
-  background: linear-gradient(to left, #6d4b36, transparent 20%), 
-              linear-gradient(to right, #6d4b36, transparent 20%);
+.slider-section .container {
+  background: linear-gradient(to left, #6d4b36, transparent 20%),
+    linear-gradient(to right, #6d4b36, transparent 20%);
   max-width: fit-content;
 }
 
 .slider-section .logos {
   overflow: hidden;
   white-space: nowrap;
-  
+
 }
 
 .logos:before,
@@ -465,7 +537,7 @@ p {
   position: absolute;
   top: 0;
   z-index: 2;
-  
+
 }
 
 .slider-section .logos-slide {
@@ -483,7 +555,8 @@ p {
   filter: brightness(0) invert(1);
   transform: scale(1.1);
   transition: 0.5s ease;
-  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth scaling effect */
+  transition: transform 0.3s ease, filter 0.3s ease;
+  /* Smooth scaling effect */
 }
 
 
@@ -682,6 +755,13 @@ p {
   gap: 64px;
 }
 
+.gradient-border {
+  border: 4px solid transparent; 
+  border-image: linear-gradient(to right, #4B3425 70%, #E8DDD9 30%); 
+  border-image-slice: 1; 
+  width: 100%;
+}
+
 .benefit-section .benefit-content-wrapper .benefit-image img:first-child,
 .benefit-section .benefit-content-wrapper .benefit-image-2 img:first-child,
 .benefit-section .benefit-content-wrapper .benefit-image-3 img:first-child {
@@ -802,20 +882,19 @@ p {
   background: var(--mindful-gray);
 }
 
-.blog-section .blog-grid .blog-post img {
+.blog-section .blog-grid .blog-post .blog-post-img-wrap {
   width: 100%;
-  height: auto;
-  object-fit: cover;
   border-radius: 24px;
-  position: relative;
   overflow: hidden;
 }
-
+.blog-section .blog-grid .blog-post .blog-post-img-wrap img{
+  width: 100%;
+}
 .blog-section .blog-grid .blog-post .blog-image {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.blog-section .blog-grid .blog-post:hover .blog-image {
+.blog-section .blog-grid .blog-post:hover .blog-post-img-wrap img {
   transform: scale(1.1);
   /* Zoom in */
 }
@@ -883,7 +962,8 @@ p {
 
 
 /* Base styles */
-.chat-image, .chat-review-text {
+.chat-image,
+.chat-review-text {
   opacity: 1;
   transform: translateX(0);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -935,6 +1015,14 @@ p {
   background-color: #926247;
 }
 
+.footer-section .newsletter .subscription input{
+  outline: none;
+}
+
+.footer-section .newsletter .subscription input::placeholder{
+  color: white;
+}
+
 .footer-nav-list a {
   color: var(--light-brawn);
   transition: color 0.3s ease;
@@ -974,10 +1062,10 @@ p {
 
 
 .footer-section .app-info {
-  padding: 16px; 
-  margin-top: 40px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
-  box-sizing: border-box; 
+  padding: 16px;
+  margin-top: 60px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
 .footer-section .app-info h2 {

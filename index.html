@@ -18,13 +18,20 @@
 
 <body>
     <!-- ========== Header Section Start ========== -->
-    <header class="header-section">
+    <header class="header-section ">
         <div class="container">
             <div class="full-header ">
                 <nav class="navbar d-flex justify-content-between align-items-center">
                     <div class="navbar-left d-flex d-none d-md-flex">
-                        <img src="assets/images/46-email-1.svg" alt="Email icon" class="image-icon object-fit-cover">
-                        <img src="assets/images/54-telephone.svg" alt="Phone icon" class="image-icon object-fit-cover">
+                        <a href="mailto:example@example.com">
+                            <img src="assets/images/46-email-1.svg" alt="Email icon"
+                                class="image-icon object-fit-cover">
+                        </a>
+
+                        <a href="tel:+9265348797">
+                            <img src="assets/images/54-telephone.svg" alt="Phone icon"
+                                class="image-icon object-fit-cover">
+                        </a>
                     </div>
 
                     <div class="navbar-logo d-none d-sm-block">
@@ -43,120 +50,142 @@
             </div>
 
             <!-- main-menu -->
-            <div class="main-menu" id="main-menu">
+            <div class="main-menu " id="main-menu">
+                <div class="all-menu-wrap">
+                    <div class="container">
+                        <div class="row align-items-center menu-wrapper">
+                            <!-- Left Navigation Section -->
+                            <div
+                                class="col-md-4 col-lg-3 bg-dark-brown text-white py-5 ps-4 d-flex flex-column justify-content-center align-items-center">
+                                <nav>
+                                    <ul class="nav flex-column gap-4 w-100 text-center">
+                                        <li class="nav-item">
+                                            <a class="nav-link d-flex align-items-center fa-2x fw-bold text-white rounded-5 active"
+                                                href="#" id="home-link">
+                                                <span class="dot me-2 d-inline-block rounded-5"></span> Home
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link d-flex align-items-center fa-2x fw-bold text-white rounded-5"
+                                                href="#" id="platform-link">
+                                                <span class="dot me-2 d-inline-block rounded-5"></span> Platform
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link d-flex align-items-center fa-2x fw-bold text-white rounded-5"
+                                                href="#" id="assessment-link">
+                                                <span class="dot me-2 d-inline-block rounded-5"></span> Assessment
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link d-flex align-items-center fa-2x fw-bold text-white rounded-5"
+                                                href="#" id="about-us-link">
+                                                <span class="dot me-2 d-inline-block rounded-5"></span> About Us
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link d-flex align-items-center fa-2x fw-bold text-white rounded-5"
+                                                href="#" id="blog-link">
+                                                <span class="dot me-2 d-inline-block rounded-5"></span> Blog
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link d-flex align-items-center fa-2x fw-bold text-white rounded-5"
+                                                href="#" id="contact-link">
+                                                <span class="dot me-2 d-inline-block rounded-5"></span> Contact Us
+                                            </a>
+                                        </li>
 
-                <div class="row justify-content-center">
-                    <!-- Left Navigation Section -->
-                    <div class="col-md-4 col-lg-3 bg-dark-brown text-white py-5">
-                        <nav>
-                            <ul class="nav flex-column gap-4">
-                                <li class="nav-item">
-                                    <a class="nav-link active d-flex align-items-center fa-2x fw-bold text-white rounded-5"
-                                        href="#">
-                                        <span class="dot me-2"></span> Home
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link fa-2x fw-bold text-white rounded-5" href="#">Platform</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link fa-2x fw-bold text-white rounded-5" href="#">Assessment</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link fa-2x fw-bold text-white rounded-5" href="#">About Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link fa-2x fw-bold text-white rounded-5" href="#">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link fa-2x fw-bold text-white rounded-5" href="#">Contact Us</a>
-                                </li>
-                            </ul>
-                        </nav>
+                                    </ul>
+                                </nav>
+                            </div>
+
+                            <!-- Right Content Section -->
+                            <div class="col-md-8 col-lg-9 bg-light-brown">
+                                <!-- Terms and Policy -->
+                                <div
+                                    class="d-flex justify-content-start small text-uppercase text-white gap-4 mb-4  d-none d-sm-block">
+                                    <span class="small-title text-white text-uppercase">Terms & Conditions</span>
+                                    <span class="small-title text-white text-uppercase">Privacy Policy</span>
+                                </div>
+
+                                <!-- Heading -->
+                                <div class="mb-5 d-none d-sm-block">
+                                    <h4 class="text-white">
+                                        Harnessing the power of AI technology to revolutionize mental health.
+                                    </h4>
+                                </div>
+
+                                <!-- Contact Information -->
+                                <div class="contact-info d-none d-md-block">
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="d-flex flex-column gap-2">
+                                                <img src="./assets/images/51-location-1.svg" alt="Location Icon"
+                                                    class=" icon me-3 rounded-5">
+                                                <p class="text-white mb-0">
+                                                    456 Oak Avenue,<br> Springfield, IL 62704
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex flex-column gap-2">
+                                                <img src="./assets/images/54-telephone-white.svg" alt="Phone Icon"
+                                                    class="icon me-3 rounded-5">
+                                                <p class="text-white mb-0">
+                                                    +555 123-4567<br> +123 456-789-000
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex flex-column gap-2">
+                                                <img src="./assets/images/46-email-1-white.svg" alt="Email Icon"
+                                                    class="icon me-3 rounded-5">
+                                                <p class="text-white mb-0">
+                                                    inquiries@freud.ai<br> work@freud.ai
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Right Content Section -->
-                    <div class="col-md-8 col-lg-9 bg-light-brown py-5">
-                        <!-- Terms and Policy -->
-                        <div class="d-flex justify-content-start small text-uppercase text-white gap-4 mb-4">
-                            <span class="small-title text-white text-uppercase">Terms & Conditions</span>
-                            <span class="small-title text-white text-uppercase">Privacy Policy</span>
-                        </div>
-
-                        <!-- Heading -->
-                        <div class="mb-5">
-                            <h4 class="text-white">
-                                Harnessing the power of AI technology to revolutionize mental health.
-                            </h4>
-                        </div>
-
-                        <!-- Contact Information -->
-                        <div class="contact-info">
-                            <div class="row g-4">
-                                <div class="col-md-6">
-                                    <div class="d-flex flex-column gap-2">
-                                        <img src="./assets/images/51-location-1.svg" alt="Location Icon"
-                                            class=" icon me-3">
-                                        <p class="text-white mb-0">
-                                            456 Oak Avenue,<br> Springfield, IL 62704
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="d-flex flex-column gap-2">
-                                        <img src="./assets/images/54-telephone-white.svg" alt="Phone Icon"
-                                            class="icon me-3">
-                                        <p class="text-white mb-0">
-                                            +555 123-4567<br> +123 456-789-000
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="d-flex flex-column gap-2">
-                                        <img src="./assets/images/46-email-1-white.svg" alt="Email Icon"
-                                            class="icon me-3">
-                                        <p class="text-white mb-0">
-                                            inquiries@freud.ai<br> work@freud.ai
-                                        </p>
-                                    </div>
-                                </div>
+                    <!-- Store Buttons -->
+                    <div class="hero-buttons d-flex align-items-center mt-4 bg-white p-3 gap-2">
+                        <div
+                            class="button btn-apple d-flex justify-content-between align-items-center rounded-5 ps-3 p-2">
+                            <a href="#" class="text-white text-decoration-none btn-lg d-flex align-items-center">
+                                Apple Store
+                            </a>
+                            <div class="card-icon icon-green rounded-circle d-flex">
+                                <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 12L21 12" stroke="#fe814b" stroke-width="2" stroke-linejoin="round">
+                                    </path>
+                                    <path
+                                        d="M16.5529 17.7956C17.8287 17.4537 18.9561 16.7004 19.7601 15.6526C20.5642 14.6047 21 13.3208 21 12C21 10.6792 20.5642 9.3953 19.7601 8.34743C18.9561 7.29957 17.8287 6.54629 16.5529 6.20445"
+                                        stroke="#fe814b" stroke-width="2" stroke-linejoin="round"></path>
+                                </svg>
                             </div>
                         </div>
 
-                        <!-- Store Buttons -->
-                        <div class="hero-buttons d-flex align-items-center mt-4 gap-2">
-                            <div
-                                class="button btn-apple d-flex justify-content-between align-items-center rounded-5 ps-3 p-2">
-                                <a href="#" class="text-white text-decoration-none btn-lg d-flex align-items-center">
-                                    Apple Store
-                                </a>
-                                <div class="card-icon icon-green rounded-circle d-flex">
-                                    <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 12L21 12" stroke="#fe814b" stroke-width="2"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M16.5529 17.7956C17.8287 17.4537 18.9561 16.7004 19.7601 15.6526C20.5642 14.6047 21 13.3208 21 12C21 10.6792 20.5642 9.3953 19.7601 8.34743C18.9561 7.29957 17.8287 6.54629 16.5529 6.20445"
-                                            stroke="#fe814b" stroke-width="2" stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                            </div>
-
-                            <div
-                                class="button btn-google d-flex justify-content-between align-items-center rounded-5 ps-3 p-2">
-                                <a href="#" class="text-white text-decoration-none btn-lg d-flex align-items-center">
-                                    Google Play
-                                </a>
-                                <div class="card-icon icon-yellow rounded-circle d-flex">
-                                    <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2 12L21 12" stroke="#9bb068" stroke-width="2"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M16.5529 17.7956C17.8287 17.4537 18.9561 16.7004 19.7601 15.6526C20.5642 14.6047 21 13.3208 21 12C21 10.6792 20.5642 9.3953 19.7601 8.34743C18.9561 7.29957 17.8287 6.54629 16.5529 6.20445"
-                                            stroke="#9bb068" stroke-width="2" stroke-linejoin="round" />
-                                    </svg>
-                                </div>
+                        <div
+                            class="button btn-google d-flex justify-content-between align-items-center rounded-5 ps-3 p-2">
+                            <a href="#" class="text-white text-decoration-none btn-lg d-flex align-items-center">
+                                Google Play
+                            </a>
+                            <div class="card-icon icon-yellow rounded-circle d-flex">
+                                <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 12L21 12" stroke="#9bb068" stroke-width="2" stroke-linejoin="round">
+                                    </path>
+                                    <path
+                                        d="M16.5529 17.7956C17.8287 17.4537 18.9561 16.7004 19.7601 15.6526C20.5642 14.6047 21 13.3208 21 12C21 10.6792 20.5642 9.3953 19.7601 8.34743C18.9561 7.29957 17.8287 6.54629 16.5529 6.20445"
+                                        stroke="#9bb068" stroke-width="2" stroke-linejoin="round"></path>
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -168,59 +197,71 @@
 
     <!-- ========== Hero Section Start ========== -->
 
-    <section class="hero-section position-relative">
+    <section class="hero-section position-relative overflow-hidden ">
+
         <div class="container">
-            <div class="hero-content d-flex justify-content-between align-items-center position-relative">
+            <!-- Text Content -->
+            <div class="hero-wrapper">
                 <div class="hero-head">
-                    <div class="hero-title title justify-content-center align-items-center text-uppercase rounded-5">
-                        <span class="dot rounded-5 d-inline-block"></span> <!-- Small dot added here -->
+                    <div
+                        class="hero-title title d-flex justify-content-center align-items-center text-uppercase rounded-5 mt-4">
+                        <span class="dot rounded-5 d-inline-block"></span>
                         <span class="small-title">Free your mind</span>
                     </div>
+
                     <div class="hero-heading">
                         <h1 class="hero-text">Empathetic Mental Health <span>AI Chatbot</span></h1>
                     </div>
 
                     <div class="hero-description mt-3">
-                        <p>Step into a world of cutting-edge technology and compassionate care, tailored to your unique
+                        <p>Step into a world of cutting-edge technology and compassionate care, tailored to your
+                            unique
                             needs.</p>
                     </div>
 
-                    <div class="hero-button d-flex mt-5 align-items-center gap-3">
-                        <div class="demo-button fw-bold text-uppercase ">
-                            <a href="" class=" text-uppercase rounded-5 text-decoration-none">try demo</a>
+                    <div class="hero-button d-flex align-items-center gap-2 mt-4">
+                        <div class="button demo-button rounded-5 text-center">
+                            <a href="" class="text-decoration-none fw-blod">Try Demo</a>
                         </div>
+
                         <div
-                            class="button app-button d-flex justify-content-between align-items-center rounded-5 p-2 ps-3">
+                            class="button app-button d-flex justify-content-between align-items-center rounded-5 p-2 ps-3 gap-3">
                             <a href="#" class="text-decoration-none btn-lg text-white align-items-center">
-                                Download The App
+                                Download App
                             </a>
                             <div class="card-icon bg-white rounded-circle">
                                 <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2 12L21 12" stroke="#9BB068" stroke-width="2" stroke-linejoin="round">
-                                    </path>
+                                    <path d="M2 12L21 12" stroke="#9BB068" stroke-width="2" stroke-linejoin="round" />
                                     <path
                                         d="M16.5529 17.7956C17.8287 17.4537 18.9561 16.7004 19.7601 15.6526C20.5642 14.6047 21 13.3208 21 12C21 10.6792 20.5642 9.3953 19.7601 8.34743C18.9561 7.29957 17.8287 6.54629 16.5529 6.20445"
-                                        stroke="#9BB068" stroke-width="2" stroke-linejoin="round"></path>
+                                        stroke="#9BB068" stroke-width="2" stroke-linejoin="round" />
                                 </svg>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="hero-image position-relative overflow-hidden">
-                    <img src="./assets/images/3D Asset 1.png" alt="" class="img-fluid">
-                    <img src="./assets/images/hero-mobile.png" alt="" class="position-absolute ">
-                </div>
             </div>
         </div>
+
+        <!-- Hero Images -->
+        <div class="hero-image position-relative">
+            <img src="./assets/images/3D-Asset-1.png" alt="Desktop Hero Image" class="img-fluid desktop-img">
+        </div>
+        <div class="mobile-img">
+            <img src="./assets/images/hero-mobile.png" alt="Mobile Hero Image" class="position-absolute">
+        </div>
+
+        <div class="gradiant"></div>
+
     </section>
+
 
     <!-- ========== Hero Section End ========== -->
 
     <!-- ========== Slider Section Start ========== -->
 
-    <section class="slider-section mx-2  rounded-5">
+    <section class="slider-section mx-2  rounded-5 position-relative z-3">
         <div class="container rounded-5 ">
             <div class="logos position-relative">
                 <div class="logos-slide d-flex justify-content-center align-items-center p-5" id="logoContainer">
@@ -687,6 +728,7 @@
                         <div class="benefit-stats mt-5 d-flex">
                             <div class="stat-item">
                                 <h3>99.987<span>%</span></h3>
+                                <div class="gradient-border mt-3"></div>
                                 <span class="small-text text-uppercase">mental health ai accuracy</span>
                             </div>
                         </div>
@@ -730,10 +772,12 @@
                     <div
                         class="journey-buttons d-flex flex-column flex-md-row justify-content-center align-items-center gap-2 mt-4">
                         <div class="button d-flex bg-white justify-content-between align-items-center p-2 ps-3">
-                            <a href="#" class="text-decoration-none btn-lg d-flex align-items-center">
+                            <a href="" target="_blank"
+                                class="text-decoration-none btn-lg d-flex align-items-center">
                                 Apple Store
                             </a>
                             <div class="card-icon icon-green rounded-circle d-flex">
+
                                 <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2 12L21 12" stroke="#fff" stroke-width="2" stroke-linejoin="round" />
@@ -741,11 +785,13 @@
                                         d="M16.5529 17.7956C17.8287 17.4537 18.9561 16.7004 19.7601 15.6526C20.5642 14.6047 21 13.3208 21 12C21 10.6792 20.5642 9.3953 19.7601 8.34743C18.9561 7.29957 17.8287 6.54629 16.5529 6.20445"
                                         stroke="#fff" stroke-width="2" stroke-linejoin="round" />
                                 </svg>
+
                             </div>
                         </div>
 
                         <div class="button d-flex bg-white justify-content-between align-items-center p-2 ps-3">
-                            <a href="#" class="text-decoration-none btn-lg d-flex align-items-center">
+                            <a href="" target="_blank"
+                                class="text-decoration-none btn-lg d-flex align-items-center">
                                 Google Play
                             </a>
                             <div class="card-icon icon-yellow rounded-circle d-flex">
@@ -762,9 +808,9 @@
 
                 </div>
 
-                <div class="journey-dashboard">
-                    <div class="dashboard-image">
-                        <img src="./assets/images/Dashboard.png" alt="dashboard-image" class="img">
+                <div class="journey-dashboard d-flex justify-content-center align-items-center">
+                    <div class="dashboard-image overflow-hidden">
+                        <img src="./assets/images/Dashboard.png" alt="dashboard-image">
                     </div>
                 </div>
             </div>
@@ -794,7 +840,9 @@
                     <!-- Blog Post 1 -->
                     <div class="col-12 col-md-6 col-lg-6">
                         <div class="blog-post h-100 d-flex flex-column rounded-5 p-3 text-center">
-                            <img src="./assets/images/blog-image.png" alt="Blog Image" class="rounded-5 blog-image">
+                            <div class="blog-post-img-wrap">
+                                <img src="./assets/images/blog-image.png" alt="Blog Image" class="rounded-5 blog-image">
+                            </div>
                             <div
                                 class="blog-info d-flex justify-content-center align-items-center mt-4 gap-2 text-uppercase">
                                 <span class="small-title date rounded-5 px-3 py-1">June 25, 2025</span>
@@ -882,7 +930,7 @@
 
     <!-- ========== Chat Section Start ========== -->
 
-    <section class="chat-section mt mx-2 p-3">
+    <section class="chat-section mt mx-2 py-3">
         <div class="container">
             <div class="row d-flex justify-content-between align-items-center">
                 <!-- Left Side Image -->
@@ -961,7 +1009,9 @@
 
                 <!-- Newsletter Subscription -->
                 <div class="newsletter d-flex align-items-center gap-2 ps-3 rounded-5">
-                    <div class="subscription text-white text-center text-md-start order-1">Subscribe to our Newsletter!
+                    <div class="subscription text-white text-center text-md-start order-1">
+                        <input type="text" name="" id="" placeholder="Subscribe to our Newsletter!"
+                            class="text-white border-0 bg-transparent">
                     </div>
                     <div><img src="./assets/images/46-email-1-white.svg" alt="email-icon" class="mb-2 mb-md-0"></div>
                     <svg class="foot-link-arrow rounded-5 order-2" width="24" height="24" viewBox="0 0 24 24"
@@ -1013,7 +1063,7 @@
                             class="fa-brands fa-linkedin"></i></a>
                 </div>
 
-                <div class="copyright d-flex gap-2">
+                <div class="copyright d-flex align-items-center gap-2">
                     <div class="d-flex justify-content-center align-items-center gap-3">
                         <p class="small-title text-white text-uppercase mb-0">copyright 2023. all rights reserved</p>
                         <span class="dot rounded-5 "></span>
@@ -1026,46 +1076,50 @@
                 </div>
 
                 <!-- app info -->
+                <div class="app-info bg-white rounded-5 d-flex justify-content-between align-items-center w-100">
+                    <div class="row w-100">
+                        <div class="col-12 col-md-8 app-heading">
+                            <h2>Get Your Mind <span class="text-highlight">Healthier.</span></h2>
+                        </div>
 
+                        <div
+                            class="col-12 col-md-4 d-flex store-buttons gap-2 justify-content-center align-items-center">
+                            <div class="button d-flex justify-content-between align-items-center p-2 ps-3 rounded-5">
+                                <a href="https://www.apple.com/in/app-store/" target="_blank"
+                                    class="text-white text-decoration-none d-flex align-items-center">Apple
+                                    Store
+                                    <div class="card-icon icon-green rounded-circle d-flex">
+                                        <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 12L21 12" stroke="#FE814B" stroke-width="2"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M16.5529 17.7956C17.8287 17.4537 18.9561 16.7004 19.7601 15.6526C20.5642 14.6047 21 13.3208 21 12C21 10.6792 20.5642 9.3953 19.7601 8.34743C18.9561 7.29957 17.8287 6.54629 16.5529 6.20445"
+                                                stroke="#FE814B" stroke-width="2" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
 
-            </div>
-        </div>
-
-        <div class="app-info bg-white rounded-5 d-flex justify-content-between align-items-center w-100">
-            <div class="row w-100">
-                <div class="col-12 col-md-8 app-heading">
-                    <h2>Get Your Mind <span class="text-highlight">Healthier.</span></h2>
-                </div>
-
-                <div class="col-12 col-md-4 d-flex store-buttons gap-2 justify-content-center align-items-center">
-                    <div class="button d-flex justify-content-between align-items-center p-2 ps-3 rounded-5">
-                        <a href="#" class="text-white text-decoration-none d-flex align-items-center">Apple
-                            Store</a>
-                        <div class="card-icon icon-green rounded-circle d-flex">
-                            <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 12L21 12" stroke="#FE814B" stroke-width="2" stroke-linejoin="round" />
-                                <path
-                                    d="M16.5529 17.7956C17.8287 17.4537 18.9561 16.7004 19.7601 15.6526C20.5642 14.6047 21 13.3208 21 12C21 10.6792 20.5642 9.3953 19.7601 8.34743C18.9561 7.29957 17.8287 6.54629 16.5529 6.20445"
-                                    stroke="#FE814B" stroke-width="2" stroke-linejoin="round" />
-                            </svg>
+                            <div class="button d-flex justify-content-between align-items-center p-2 ps-3 rounded-5">
+                                <a href="https://play.google.com/store/games?hl=en" target="_blank"
+                                    class="text-white text-decoration-none d-flex align-items-center">Google
+                                    Play</a>
+                                <div class="card-icon icon-yellow rounded-circle d-flex">
+                                    <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 12L21 12" stroke="#9BB068" stroke-width="2"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M16.5529 17.7956C17.8287 17.4537 18.9561 16.7004 19.7601 15.6526C20.5642 14.6047 21 13.3208 21 12C21 10.6792 20.5642 9.3953 19.7601 8.34743C18.9561 7.29957 17.8287 6.54629 16.5529 6.20445"
+                                            stroke="#9BB068" stroke-width="2" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="button d-flex justify-content-between align-items-center p-2 ps-3 rounded-5">
-                        <a href="#" class="text-white text-decoration-none d-flex align-items-center">Google
-                            Play</a>
-                        <div class="card-icon icon-yellow rounded-circle d-flex">
-                            <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 12L21 12" stroke="#9BB068" stroke-width="2" stroke-linejoin="round" />
-                                <path
-                                    d="M16.5529 17.7956C17.8287 17.4537 18.9561 16.7004 19.7601 15.6526C20.5642 14.6047 21 13.3208 21 12C21 10.6792 20.5642 9.3953 19.7601 8.34743C18.9561 7.29957 17.8287 6.54629 16.5529 6.20445"
-                                    stroke="#9BB068" stroke-width="2" stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                    </div>
                 </div>
+
             </div>
         </div>
     </footer>

@@ -13,11 +13,14 @@
   .header-section .main-menu .nav-bar {
     gap: 150px;
   }
+  .main-menu .all-menu-wrap .menu-wrapper {
+    gap: 150px;
+}
 
   /* ========== Header CSS End ========== */
 
   /* ========== Hero CSS Start ========== */
-  
+
 
   /* ========== Hero CSS End ========== */
 
@@ -88,6 +91,9 @@
     grid-template-columns: max-content;
   }
 
+  .main-menu .all-menu-wrap .menu-wrapper {
+    gap: 0px;
+}
   /* ========== Header CSS End ========== */
 
   /* ========== Hero CSS Start ========== */
@@ -99,8 +105,8 @@
     text-align: center;
   }
 
-  .hero-section .hero-buttons {
-    flex-direction: column;
+  .hero-section .hero-head {
+    margin-bottom: 50px;
   }
 
   /* ========== Hero CSS End ========== */
@@ -190,28 +196,42 @@
     display: none;
   }
 
-  /* ========== Header CSS End ========== */
-
-  .hero-section .hero-content {
+  .main-menu .row {
     flex-direction: column;
-    justify-content: space-between;
   }
 
-  .hero-section .hero-content .hero-head{
+  .main-menu .hero-buttons {
+    flex-direction: column;
+  }
+
+  .main-menu .button {
+    width: 100%;
+  }
+
+  /* ========== Header CSS End ========== */
+
+
+  .hero-section .hero-content .hero-head {
     text-align: center;
   }
 
-  .hero-section .hero-content .hero-head .hero-button{
+  .hero-section .hero-wrapper .hero-head .hero-title{
+    margin: 0 auto;
+  }
+
+  .hero-section .hero-wrapper .hero-head .hero-heading h1{
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .hero-section .hero-wrapper .hero-head .hero-button {
+    flex-direction: column;
     justify-content: center;
   }
 
-  .hero-image .img-fluid:first-of-type {
-    transform: rotate(90deg); /* Adjust the angle as needed */
-}
-
-
-  
-.hero-section .hero-content .hero-head .hero-button
+  .hero-section .hero-wrapper .hero-head .hero-button .button{
+    width: 100%;
+  }
 
   /* ========== Purpose CSS Start ========== */
 
@@ -381,10 +401,12 @@
   .feature-section {
     padding: 86px 0;
   }
-  .feature-section .feature-detalis .feature-head .feature-heading h2{
+
+  .feature-section .feature-detalis .feature-head .feature-heading h2 {
     font-size: 36px;
     line-height: 44px;
   }
+
   /* ========== Feature CSS End ========== */
 
   /* ========== Benefit CSS Start ========== */
@@ -399,6 +421,9 @@
     line-height: 28.8px;
   }
 
+  .benefit-section .benefit-content-wrapper .benefit-details .benefit-stats {
+    gap: 32px;
+}
 
 
   /* ========== Benefit CSS End ========== */
@@ -454,6 +479,4 @@
 
 }
 
-@media (max-width: 375px) {
-
-}
+@media (max-width: 375px) {}
