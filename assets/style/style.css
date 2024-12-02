@@ -1091,6 +1091,7 @@ p {
 
 .footer-section .store-buttons .button a {
   color: var(--mindful-brawn);
+  width: 100%;
 }
 
 .footer-section .store-buttons .card-icon {
